@@ -10,8 +10,11 @@ while odgovor != 'ne':
         seznam.append(raw_input("Prosim napiši izdelek ki ga želiš dodati: "))
         print("Seznam: %s" % seznam )
     elif odgovor == 'ne':
+        print("Kupiti moraš: \n")
+        for izdelek in seznam:
+            print izdelek
         break
     else:
         print('Prosim odgovori z "da" ali "ne"!')
 
-print'Veselo nakupuj!'
+print'\nVeselo nakupuj!'
